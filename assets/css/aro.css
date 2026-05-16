@@ -63,7 +63,7 @@ nav a:hover {
   overflow: hidden;
 }
 
-.hero::before {
+.hero-overlay {
   content: '';
   position: absolute;
   top: 0;
@@ -72,6 +72,32 @@ nav a:hover {
   bottom: 0;
   background: linear-gradient(135deg, rgba(15, 15, 15, 0.4) 0%, rgba(15, 15, 15, 0.2) 100%);
   z-index: 1;
+}
+
+/* CTA Button as Overlay */
+.cta-overlay {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  padding: 1em 2.5em;
+  background: #d4af37;
+  color: #0f0f0f;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  transition: all 0.4s ease;
+  border: 2px solid #d4af37;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.cta-overlay:hover {
+  background: transparent;
+  color: #d4af37;
+  transform: translateX(-50%) scale(1.05);
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
 }
 
 .hero-content {
@@ -115,25 +141,6 @@ nav a:hover {
   color: #b8b8b8;
   margin: 1.5em 0 2em 0;
   letter-spacing: 0.03em;
-}
-
-.cta-button {
-  display: inline-block;
-  padding: 1em 2.5em;
-  background: #d4af37;
-  color: #0f0f0f;
-  text-decoration: none;
-  letter-spacing: 0.1em;
-  font-weight: 600;
-  transition: all 0.4s ease;
-  border: 2px solid #d4af37;
-  cursor: pointer;
-}
-
-.cta-button:hover {
-  background: transparent;
-  color: #d4af37;
-  transform: scale(1.05);
 }
 
 /* Collections Section */
@@ -314,5 +321,11 @@ footer {
 
   .grid-2 {
     grid-template-columns: 1fr;
+  }
+
+  .cta-overlay {
+    bottom: 10%;
+    font-size: 0.9em;
+    padding: 0.8em 2em;
   }
 }
