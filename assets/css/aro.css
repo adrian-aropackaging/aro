@@ -53,7 +53,7 @@ nav a:hover {
 /* Hero Section */
 .hero {
   min-height: 50vh;
-background-size: contain;
+background-size: auto;
 background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
