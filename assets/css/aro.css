@@ -55,7 +55,7 @@ nav a:hover {
   min-height: 50vh;
 background-size: 40%;
 background-repeat: no-repeat;
-  background-position: top;
+  background-position: center;
   background-attachment: fixed;
   display: flex;
   align-items: center;
