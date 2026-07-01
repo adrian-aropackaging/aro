@@ -16,12 +16,12 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5em 2em;
+  padding: 0.5em 2em;
   background: rgba(15, 15, 15, 0.95);
   position: sticky;
   top: 0;
   z-index: 100;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(1px);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
 }
 
