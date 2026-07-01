@@ -107,7 +107,7 @@ background-repeat: no-repeat;
   color: #e8e8e8;
   z-index: 2;
   position: relative;
-  max-width: 600px;
+  max-width: 1400px;
 }
 
 .hero-branding {
@@ -187,7 +187,7 @@ background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
   margin: -1.5em -1.5em 1.5em -1.5em;
-  height: 300px;
+  height: 100px;
   background: #1a1a1a;
 }
 
